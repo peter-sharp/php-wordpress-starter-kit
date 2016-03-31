@@ -1,0 +1,26 @@
+{
+  "name": "scotch-extras",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephen-webmad/24-7newwebsite.git"
+  },
+  "keywords": [
+    "wordpress",
+    "information"
+  ],
+  "author": "Peter Sharp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stephen-webmad/24-7newwebsite/issues"
+  },
+  "homepage": "https://github.com/stephen-webmad/24-7newwebsite#readme",
+  "devDependencies": {
+    "open": "0.0.5"
+  }
+}
