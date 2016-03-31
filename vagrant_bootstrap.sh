@@ -48,7 +48,7 @@ function import_mysql {
   do
     echo "Importing $file ....."
 
-    mysql -uroot -proot < $file > import_log.tab
+    mysql -uroot -proot scotchbox < $file > import_log.tab
   done
 }
 
