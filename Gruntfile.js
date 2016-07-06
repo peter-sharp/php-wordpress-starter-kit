@@ -431,16 +431,16 @@ module.exports = function (grunt) {
   		grunt.loadNpmTasks('grunt-contrib-less');
   	}
 
-    grunt.loadNpmTasks('grunt-responsive-images');
+    //grunt.loadNpmTasks('grunt-responsive-images');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
-    grunt.loadNpmTasks('grunt-grunticon');
+    //grunt.loadNpmTasks('grunt-grunticon');
     grunt.loadNpmTasks('grunt-webpack');
   	grunt.loadNpmTasks('grunt-contrib-jshint');
   	grunt.loadNpmTasks('grunt-bower-requirejs');
   	grunt.loadNpmTasks('grunt-bowercopy');
-  	grunt.loadNpmTasks('grunt-contrib-requirejs');
-  	grunt.loadNpmTasks('grunt-contrib-imagemin');
-  	grunt.loadNpmTasks('grunt-svgmin');
+  	//grunt.loadNpmTasks('grunt-contrib-requirejs');
+  	//grunt.loadNpmTasks('grunt-contrib-imagemin');
+  	//grunt.loadNpmTasks('grunt-svgmin');
 
 };
