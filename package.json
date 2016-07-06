@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "sudo vagrant up",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,6 +22,20 @@
   },
   "homepage": "https://github.com/stephen-webmad/24-7newwebsite#readme",
   "devDependencies": {
-    "open": "0.0.5"
+    "bower": "~0.8.6",
+    "grunt": "~0.4.1",
+    "grunt-bower-requirejs": "~0.4.1",
+    "grunt-bowercopy": "^1.2.4",
+    "grunt-contrib-jshint": "~0.1.1",
+    "grunt-contrib-less": "^1.3.0",
+    "grunt-contrib-watch": "~0.5.1",
+    "grunt-sass": "^1.1.0",
+    "grunt-webpack": "^1.0.11",
+    "hostile": "^1.0.2",
+    "node-sass": "^3.4.2",
+    "open": "0.0.5",
+    "q": "^1.4.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
   }
 }
