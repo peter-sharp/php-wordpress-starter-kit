@@ -29,8 +29,9 @@ module.exports = function (grunt) {
         contactForm: 'wp-content/plugins/contact-form/',
         mediaLibrary: 'wp-content/plugins/media-library/'
     };
-
+    
     // generates a css output path relative to the source
+    // TODO change folder structure so css source files located in css folder under 'sources'
     function genStylePath(dest, src) {
 
       var ext = this.ext;
@@ -154,7 +155,7 @@ module.exports = function (grunt) {
         },
         dev : {
           files : [
-            {
+            { 
               src : ['**/scss/**/*.scss', '!**/scss/**/_*.scss', '!**/node_modules/**/scss/**/*.scss'],
               cwd : '<%= publicDir %>',
               dest : 'css',
