@@ -1,0 +1,94 @@
+# ignore YeoPress configuration file since it contains password information
+.yeopress
+
+# As Yeoman assumes the usage of Bower and Grunt, ignore the below:
+bower_components
+node_modules/
+./node_modules
+./node_modules/**
+
+
+# Ignore automatically generated cruft
+*.log
+.sass-cache
+.DS_Store
+
+# Ignore config
+local-config.php
+production-config.php
+
+
+
+# Operating system files
+.Spotlight-V100
+.Trashes
+.DS_Store
+.DS_Store?
+ehthumbs.db
+Thumbs.db
+
+# Vagrant
+.vagrant
+
+# WordPress + popular plugin generated — adapted from:
+# https://github.com/github/gitignore/blob/master/WordPress.gitignore
+
+sitemap.xml
+sitemap.xml.gz
+#wordpress
+html/wp-content/advanced-cache.php
+html/wp-content/backup-db/
+html/wp-content/backups/
+html/wp-content/blogs.dir/
+html/wp-content/cache/
+html/wp-content/uploads/
+html/wp-content/upgrade/
+html/wp-content/wp-cache-config.php
+/html/wordpress
+
+wp-config.php
+
+# plugins and themes
+html/wp-content/plugins/**
+html/wp-content/plugins/**/vendor
+html/wp-content/themes/**
+
+# except ones in active development
+!html/wp-content/plugins/angular-logger
+!html/wp-content/plugins/contact-form
+!html/wp-content/plugins/fb-campaign-tracking
+!html/wp-content/plugins/media-library
+!html/wp-content/plugins/events-core
+!html/wp-content/plugins/promosite-shortcodes
+!html/wp-content/plugins/rodem-events
+!html/wp-content/plugins/wedding-tools
+!html/wp-content/plugins/wedding-tools/**
+html/wp-content/plugins/wedding-tools/**/node_modules/
+
+!html/wp-content/plugins/postmark-approved-wordpress-plugin
+!html/wp-content/plugins/postmark-approved-wordpress-plugin/**
+
+!html/wp-content/themes/vintage-portfolio
+!html/wp-content/themes/eastern-festival
+!html/wp-content/themes/modern-wedding
+!html/wp-content/themes/modern-wedding/**
+
+# composer files
+vendor
+!html/wp-content/plugins/wedding-tools/vendor
+!html/wp-content/plugins/wedding-tools/vendor/**
+
+composer.phar
+composer.lock
+
+# cloud9 data
+.c9
+# on macmini
+sharp-WE04.zip
+sharp-WE04
+design_and_documentation
+
+#eclipse stuff
+.project
+.settings
+.buildpath
