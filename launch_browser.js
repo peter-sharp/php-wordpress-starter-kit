@@ -1,4 +1,4 @@
-var open = require("open");
+var open = require("opn");
 //load library for editing hosts file
 var hostile = require("hostile");
 
@@ -7,6 +7,7 @@ var Q = require('q');
 
 var hostName = "wp-test.com";
 var ip       = "192.168.33.10";
+const browser  = "google-chrome";//"/opt/firefox_dev/firefox";
 
 function checkForHost( host ) {
   var deferred = Q.defer();
@@ -43,12 +44,18 @@ function createHost ( hostName, ip ) {
 checkForHost(hostName)
 .then(function ( hostsCount ) {
   if ( hostsCount ) {
-    open( hostName, "google-chrome" );
+    open( hostName, {app: browser })
+    .then(() => {
+      console.log(`${browser} opened ${hostname}`)
+    });
 
   } else {
     createHost( hostName, ip )
     .then(function() {
-      open( hostName, "google-chrome" );
+      open( hostName, {app: browser })
+      .then(() => {
+        console.log(`${browser} opened ${hostname}`)
+      });
 
     }).catch(function( error ) {
       console.error(error);
