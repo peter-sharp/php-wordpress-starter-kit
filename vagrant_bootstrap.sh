@@ -1,5 +1,6 @@
 #! /usr/bin/env bash
 
+
 function install_phpmyadmin {
   echo 'Checking phpMyAdmin installed...'
 
@@ -41,6 +42,14 @@ EOF
   fi
 }
 
+
+function set_html_folder {
+  mv /var/www/public /var/www/html
+  sudo sed -i s,/var/www/public,/var/www/html,g /etc/apache2/sites-available/000-default.conf
+  sudo sed -i s,/var/www/public,/var/www/html,g /etc/apache2/sites-available/scotchbox.local.conf
+  sudo service apache2 restart
+}
+
 function import_mysql {
   echo "importing sql dumps..."
   FILES=/var/www/public/sql_dumps/*.sql
@@ -53,4 +62,5 @@ function import_mysql {
 }
 
 install_phpmyadmin
-import_mysql
+set_html_folder
+#import_mysql
