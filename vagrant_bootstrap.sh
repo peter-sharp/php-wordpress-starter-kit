@@ -56,7 +56,8 @@ function import_mysql {
   for file in $FILES
   do
     echo "Importing $file ....."
-
+    
+    #TODO: add db name variable
     mysql -uroot -proot scotchbox < $file > import_log.tab
   done
 }
